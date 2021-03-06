@@ -1,0 +1,134 @@
+.hero {
+  position: relative;
+  padding-top: 21px;
+  background: url("../img/hero-bg.png") center no-repeat / cover;
+  color: $color-white;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-black;
+  }
+
+  &__wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left-box {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &__title {
+    position: relative;
+    padding-bottom: 17px;
+    margin-bottom: 10px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 99;
+      left: 0;
+      bottom: 0;
+      width: 46px;
+      height: 3px;
+      background-color: $color-white;
+    }
+  }
+  &__discription {
+    padding-bottom: 10px;
+    font-size: $font-size-16;
+    line-height: 24px;
+  }
+  &__left-btn {
+    padding-bottom: 382px;
+  }
+  &__left-link {
+    color: $color-dark-gray;
+    background-color: $color-white;
+
+    &:hover {
+      background-color: $color-tranparent;
+    }
+  }
+
+  &__right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__social {
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    svg {
+      margin-bottom: 27px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__right-btn {
+    padding-bottom: 135px;
+  }
+  &__right-link {
+    color: $color-white;
+    &:hover {
+      background-color: $color-white;
+    }
+  }
+}
+#mob-nav {
+  display: none;
+}
+.arrow-down {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  width: 26px;
+  height: 26px;
+  border-left: 2px solid $color-white;
+  cursor: pointer;
+  z-index: 99;
+  &:after {
+    content: "";
+    position: absolute;
+    left: -6px;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid $color-white;
+    border-bottom: 2px solid $color-white;
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    &__wrap {
+      display: block;
+    }
+    &__left-box {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__left-btn {
+      padding-bottom: 30px;
+    }
+    &__social {
+      display: none;
+    }
+  }
+  #mob-nav {
+    display: block;
+  }
+}

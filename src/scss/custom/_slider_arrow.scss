@@ -1,0 +1,45 @@
+.arrow-prev,
+.arrow-next {
+  position: absolute;
+  display: block;
+  top: 82%;
+  width: 12px;
+  height: 12px;
+  border-bottom: 2px solid $color-dark-gray;
+  transition: $transition-base;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.arrow-prev {
+  left: 40%;
+  border-left: 2px solid $color-dark-gray;
+  transform: rotate(45deg);
+  cursor: pointer;
+  &:hover {
+    transform: rotate(45deg);
+  }
+}
+
+.arrow-next {
+  right: 40%;
+  border-right: 2px solid $color-dark-gray;
+  transform: rotate(-45deg);
+  &:hover {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+  .arrow-prev,
+  .arrow-next {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .arrow-prev,
+  .arrow-next {
+    display: none;
+  }
+}

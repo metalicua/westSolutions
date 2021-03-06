@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Uneke</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <svg class="sprite">
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="facebook">
+          <path d="M9.828 3.36h1.922V.5H9.476C6.734.617 6.172 2.164 6.125 3.781v1.43H4.25V8h1.875v7.5h2.813V8h2.32l.445-2.789H8.938v-.867a.929.929 0 01.89-.985v0z" stroke="#fff" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="twitter">
+          <path d="M15.112 3.777c-.268.1-.543.181-.822.242a.125.125 0 01-.138-.063.126.126 0 01.025-.15 3.79 3.79 0 00.78-1.066.124.124 0 00-.025-.143.125.125 0 00-.144-.022 4.65 4.65 0 01-1.632.518 3.23 3.23 0 00-2.25-.938 3.09 3.09 0 00-3.094 3.094c0 .228.023.456.07.68-2.261-.07-4.902-1.162-6.445-3.063a.125.125 0 00-.207.018 3.119 3.119 0 00.739 3.698.125.125 0 01-.086.222 1.937 1.937 0 01-.775-.2.125.125 0 00-.181.119A2.913 2.913 0 002.92 9.365a.125.125 0 01-.022.24 3.142 3.142 0 01-.709 0 .127.127 0 00-.134.16c.213.82 1.273 1.78 2.46 1.912a.126.126 0 01.104.158.125.125 0 01-.037.06 5.236 5.236 0 01-3.5 1.144.125.125 0 00-.064.236 9.321 9.321 0 004.333 1.066 8.625 8.625 0 008.671-9.045v-.118a5.278 5.278 0 001.234-1.21.125.125 0 00-.145-.19v0z" stroke="#fff" stroke-miterlimit="10"></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" id="heart">
+          <path d="M15.999 5.276a4.334 4.334 0 00-.784-2.521 4.132 4.132 0 00-2.082-1.553 4.009 4.009 0 00-2.57.02 4.136 4.136 0 00-2.06 1.583 4.136 4.136 0 00-2.06-1.584 4.009 4.009 0 00-2.57-.019A4.131 4.131 0 001.79 2.755a4.334 4.334 0 00-.785 2.521 4.373 4.373 0 000 .464c.45 4.478 7.497 9.189 7.497 9.189s6.222-4.325 7.346-8.417a4.33 4.33 0 00.15-1.236z" stroke="#FCFCFC" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" id="icon-search">
+          <path d="M10.79 10.79L16 16m-9.265-3.53a5.735 5.735 0 100-11.47 5.735 5.735 0 000 11.47z" stroke="#FCFCFC" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+      </svg>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+              <button id="mob-nav" class="navbar-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <a href="#"><img src="img/logo.png" alt="Logo" class="header__logo"></a>    
+                <nav class="navbar-expand-md">
+                    <div class="container-fluid">
+                    
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle header__link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
+                                All furniture
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            </li>
+                          <li class="nav-item">
+                            <a class="nav-link header__link" aria-current="page" href="#">About us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link header__link" href="#">News</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link header__link" href="#">Contacts</a>
+                          </li>
+                          
+                        </ul>
+                       
+                      </div>
+                    </div>
+                  </nav>
+                <div class="header__icon ml-auto">
+                    <svg class="icon">
+                        <use xlink:href="#icon-search"></use>
+                    </svg>
+                    <svg class="icon">
+                        <use xlink:href="#heart"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+          <div class="hero__wrap">
+            <div class="arrow-down"></div>
+              <div class="hero__left-box col-sm-12 col-md-6 col-xl-6">
+                  <div class="hero__title">
+                      <h3>Since 1982</h3>
+                  </div>
+                  <div class="hero__discription">
+                      <h1>Specialist custom designers
+                          and manufacturers</h1>
+                  </div>
+                  <div class="hero__left-btn">
+                      <a href="#" class="btn hero__left-link col-12 col-sm-5 col-md-7">Shop online</a>
+                  </div>
+              </div>
+              <div class="hero__right-box col-sm-12 col-md-6 col-xl-4">
+                  <div class="hero__social ml-auto">
+                    <svg class="icon">
+                      <use xlink:href="#twitter"></use>
+                  </svg>
+                    <svg class="icon">
+                      <use xlink:href="#facebook"></use>
+                  </svg>
+                
+                  </div>
+                  <div>
+                    <div class="hero__title">
+                      <h3>About us</h3>
+                  </div>
+                  <div class="hero__discription">
+                      We specialise as custom designers and makers of free standing timber furniture. Trading since 1982, we have built an excellent reputation for quality custom 
+                       made furniture.
+                  </div>
+                  <div class="hero__right-btn">
+                      <a href="#" class="btn hero__right-link col-12 col-sm-5 col-md-7">Read more</a>
+                  </div>
+                  </div>
+                 
+              </div>
+          </div>
+        </div>     
+    </section>
+    <section class="galery">
+      <div class="container">
+          <div class="galery__box">
+            <div class="galery__item col-lg-4 col-md-4 col-sm-6 col-xs-9">
+              <img class="galery__image" src="img/img1.png" alt="">
+              <div class="galery__title">
+               <h3>Lounge</h3> 
+              </div>
+            </div>
+            <div class="galery__item col-lg-4 col-md-4 col-sm-6 col-xs-9">
+              <img class="galery__image" src="img/img2.png" alt="">
+              <div class="galery__title">
+                <h3>Bedroom</h3>
+              </div>
+            </div>
+             <div class="galery__item col-lg-4 col-md-4 col-sm-6 col-xs-9">
+              <img class="galery__image" src="img/img3.png" alt="">
+              <div class="galery__title">
+                <h3>Dinning</h3>
+              </div>
+            </div>
+            <div class="galery__item col-lg-4 col-md-4 col-sm-6 col-xs-9">
+              <img class="galery__image" src="img/img4.png" alt="">
+              <div class="galery__title">
+                <h3>Office</h3>
+              </div>
+            </div>
+            <div class="galery__item col-lg-4 col-md-4 col-sm-6 col-xs-9">
+              <img class="galery__image" src="img/img5.png" alt="">
+              <div class="galery__title">
+                <h3>Acsessories</h3>
+              </div>
+            </div>
+            <div class="galery__item col-lg-4 col-md-4 col-sm-6 col-xs-9">
+              <img class="galery__image" src="img/img6.png" alt="">
+              <div class="galery__title">
+                <h3>Custom furniture</h3>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <div class="info__box">
+          <div class="info__item col-3">
+            <div class="info__wrap">
+              <span class="info__text">Established</span>
+              <span class="info__numb">
+                1982
+              </span>
+            </div>
+          </div>
+          <div class="info__item col-3">
+            <div class="info__wrap">
+            <span class="info__numb">
+              3000
+            </span>
+            <span class="info__text">Happy customers</span>
+           </div>
+          </div>
+         
+          <div class="info__item col-3">
+            <div class="info__wrap">
+            <span class="info__numb">
+              3000
+            </span>
+            <span class="info__text">Happy customers</span>
+           </div>
+          </div>
+          <div class="info__item col-3">
+            <div class="info__wrap">
+              <span class="info__text">Established</span>
+              <span class="info__numb">
+                1982
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="slider__title">
+        <h3>Featured products</h3>
+      </div>
+      <div class="arrow-prev">
+        <div class="prev"></div>
+      </div>
+      <div class="arrow-next">
+        <div class="next"></div>
+      </div>
+      <div class="slider__box">
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide1.png" alt="">
+          </div>
+          <div class="slide__title">
+            Rotating Blu-ray and DVD Racks
+          </div>
+          <div class="slide__discription">
+            Lounge
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide2.png" alt="">
+          </div>
+          <div class="slide__title">
+            Aspen sofa table
+          </div>
+          <div class="slide__discription">
+            Lounge
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide3.png" alt="">
+          </div>
+          <div class="slide__title">
+            Mondi chair
+          </div>
+          <div class="slide__discription">
+            Lounge
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide4.png" alt="">
+          </div>
+          <div class="slide__title">
+            Mosse dinning chair
+          </div>
+          <div class="slide__discription">
+            Dinning
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide1.png" alt="">
+          </div>
+          <div class="slide__title">
+            Rotating Blu-ray and DVD Racks
+          </div>
+          <div class="slide__discription">
+            Lounge
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide2.png" alt="">
+          </div>
+          <div class="slide__title">
+            Aspen sofa table
+          </div>
+          <div class="slide__discription">
+            Lounge
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide3.png" alt="">
+          </div>
+          <div class="slide__title">
+            Mondi chair
+          </div>
+          <div class="slide__discription">
+            Lounge
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide4.png" alt="">
+          </div>
+          <div class="slide__title">
+            Mosse dinning chair
+          </div>
+          <div class="slide__discription">
+            Dinning
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide1.png" alt="">
+          </div>
+          <div class="slide__title">
+            Rotating Blu-ray and DVD Racks
+          </div>
+          <div class="slide__discription">
+            Lounge
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide2.png" alt="">
+          </div>
+          <div class="slide__title">
+            Aspen sofa table
+          </div>
+          <div class="slide__discription">
+            Lounge
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide3.png" alt="">
+          </div>
+          <div class="slide__title">
+            Mondi chair
+          </div>
+          <div class="slide__discription">
+            Lounge
+          </div>
+        </div>
+        <div class="slider__item ">
+          <div class="slider__image">
+            <img src="img/slide4.png" alt="">
+          </div>
+          <div class="slide__title">
+            Mosse dinning chair
+          </div>
+          <div class="slide__discription">
+            Dinning
+          </div>
+        </div>
+      </div>
+   
+    </section>
+</body>
+
+</html>

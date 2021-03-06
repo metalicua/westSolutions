@@ -1,0 +1,14 @@
+.sprite {
+  display: none;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transition: $transition-base;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

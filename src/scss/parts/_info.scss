@@ -1,0 +1,39 @@
+.info {
+  margin-top: -50px;
+  text-align: center;
+  color: $color-white;
+  &__box {
+    display: flex;
+    align-items: center;
+    background-color: $color-dark-gray;
+  }
+  &__item {
+    position: relative;
+    padding: 15px 0;
+    font-size: $font-size-19;
+    &:nth-child(2) .info__wrap {
+      border-right: 1px solid $color-white;
+      border-left: 1px solid $color-white;
+    }
+    &:nth-child(3) .info__wrap {
+      border-right: 1px solid $color-white;
+    }
+  }
+  &__wrap {
+    padding: 7px 0;
+  }
+  &__text {
+    display: block;
+  }
+  &__numb {
+    font-weight: 700;
+  }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+  .info {
+    margin-top: -40px;
+    &__item {
+      font-size: $font-size-12;
+    }
+  }
+}

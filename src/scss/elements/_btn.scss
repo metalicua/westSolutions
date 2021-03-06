@@ -1,0 +1,12 @@
+.btn {
+  padding: 10px;
+  font-size: $font-size-20;
+  font-weight: 500;
+  border: 2px solid $color-white;
+  transition: $transition-base;
+}
+@media (min-width: 992px) {
+  .btn {
+    width: 260px;
+  }
+}

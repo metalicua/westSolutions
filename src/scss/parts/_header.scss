@@ -1,0 +1,39 @@
+.header {
+  font-family: $font-for-header;
+  color: $color-white-header;
+  font-size: $font-size-15;
+  background-color: $color-dark-gray;
+  letter-spacing: 1px;
+
+  &__wrap {
+    padding: 19px 0;
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 90px;
+  }
+  &__link {
+    color: $color-white-header;
+    transition: $transition-base;
+
+    &:hover {
+      color: $color-white-header;
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    svg {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.navIsActive {
+  color: $color-white-header;
+  text-decoration: underline;
+}

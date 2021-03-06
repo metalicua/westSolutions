@@ -1,0 +1,29 @@
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//Slick-Slider
+
+@import "../../node_modules/slick-slider/slick/slick.scss";
+@import "../../node_modules/slick-slider/slick/slick-theme.scss";
+
+// Common
+@import "common/fonts";
+@import "common/variables";
+@import "common/typography";
+@import "common/main";
+
+// Custom
+@import "custom/bootstrap-custom";
+@import "custom/slider_arrow";
+
+//Elements
+
+@import "elements/sprite";
+@import "elements/btn";
+
+// Parts
+@import "parts/header";
+@import "parts/hero";
+@import "parts/galery";
+@import "parts/info";
+@import "parts/slider";

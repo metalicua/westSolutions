@@ -1,0 +1,49 @@
+.slider {
+  position: relative;
+  padding: 80px 0 140px;
+  &__box {
+    display: flex;
+  }
+  &__title {
+    position: relative;
+    padding-bottom: 13px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 99;
+      left: 50%;
+      bottom: 0;
+      width: 46px;
+      height: 3px;
+      transform: $position-center;
+      background-color: $color-black;
+    }
+  }
+  &__item {
+    font-size: $font-size-16;
+  }
+
+  &__image {
+    margin-right: 15px;
+    max-width: 274px;
+    padding: 25px 27px;
+    background-color: $color-gray;
+    text-align: center;
+  }
+}
+
+.slide {
+  &__title {
+    font-weight: 700;
+  }
+  &__discription {
+    font-weight: 500;
+  }
+}
+
+.slick-slide {
+  width: 290px !important;
+}

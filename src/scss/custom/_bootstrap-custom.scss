@@ -1,0 +1,31 @@
+// @media (min-width: 576px) {
+//   .container {
+//     max-width: 680px;
+//   }
+// }
+// @media (min-width: 992px) {
+//   .container {
+//     max-width: 960px;
+//   }
+// }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.navbar-light {
+  margin-right: 25px;
+}
+// .nav-link {
+//   color: $color-wite-header;
+//   transition: $transition-base;
+
+//   &:hover {
+//     color: $color-white-header;
+//   }
+// }
+.navbar-light {
+  background-color: $color-white-header;
+}
